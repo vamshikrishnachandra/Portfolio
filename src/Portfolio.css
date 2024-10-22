@@ -1,0 +1,61 @@
+section.padding {
+    padding: 5rem 0;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #4e567e;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive cards */
+    gap: 20px; /* Space between cards */
+    padding: 1rem; /* Space around the grid */
+  }
+  
+  .box {
+    background-color: #fff; /* Card background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Padding inside cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover */
+  }
+  
+  .box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+  }
+  
+  .box h3 {
+    font-size: 1.5rem; /* Card title size */
+    color: #4e567e; /* Title color */
+    margin-bottom: 0.5rem; /* Space below the title */
+  }
+  
+  .box p.small {
+    font-size: 0.875rem; /* Description font size */
+    color: #666; /* Description color */
+  }
+  
+  img {
+    margin: 10px;
+    border-radius: 8px; /* Rounded corners for the image */
+    max-height: 400px; /* Maximum height for the image */
+    width: 100%; /* Full width */
+    object-fit: cover; /* Cover the area */
+  }
+  
+  @media (max-width: 768px) {
+    /* Responsive adjustments for smaller screens */
+    .container {
+      grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+  
+    h2 {
+      font-size: 2rem; /* Smaller heading on mobile */
+    }
+  }
+  

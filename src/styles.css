@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+  color: #333; /* A softer text color */
+}
+
+div#main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+}
+
+section.min-height {
+  min-height: 100vh;
+}
+
+section.padding {
+  padding: 5rem 0;
+  background-color: rgba(255, 255, 255, 0.9); /* A slightly transparent background for better contrast */
+  border-radius: 15px; /* Soft corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+section img.background {
+  height: 100%;
+  left: 50%;
+  object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, 0);
+  width: 100vmax;
+  z-index: -1;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 0.8;
+  margin: 0;
+  text-align: center; /* Centering the main title */
+  color: #4e567e; /* Main title color */
+}
+
+h2 {
+  font-size: 2.5rem; /* Increased size for better visibility */
+  font-weight: 600; /* Bold for emphasis */
+  margin: 0;
+  padding-top: 1rem;
+  color: #4e567e; /* Heading color */
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem; /* Increased size */
+  margin: 0;
+  color: #555; /* Subtle heading color */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+p.large {
+  font-size: 24px;
+  color: #333; /* Darker text for large description */
+}
+
+p.small {
+  font-size: 15px;
+}
+
+hr {
+  margin: 2.5rem;
+  border: 1px solid #4e567e; /* Styled horizontal line */
+}
+
+ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0; /* Reset padding */
+}
+
+li {
+  line-height: 1.7;
+  padding: 0.5rem 0; /* Spacing between list items */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+li:hover {
+  color: #4e567e; /* Color change on hover */
+}
+
+li::marker {
+  color: #4e567e; /* Custom color for list markers */
+}
+
+a {
+  color: #4e567e; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333; /* Darker color on hover */
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); /* Responsive grid */
+  margin: 20px auto;
+}
+
+.container .box {
+  border-radius: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 24px 16px;
+  text-align: center;
+  background: white; /* Box background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.container .box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+img.socialIcon {
+  height: 30px;
+  width: 30px;
+}
+

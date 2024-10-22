@@ -1,0 +1,38 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+    padding: 1rem 2rem; /* Padding for spacing */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 10; /* Ensure it stays above other content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  nav {
+    display: flex; /* Use flexbox for navigation links */
+    gap: 2rem; /* Space between links */
+  }
+  
+  nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+    font-size: 1.2rem; /* Increase font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  nav a:hover {
+    color: #007BFF; /* Change color on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 1rem; /* Reduce padding on smaller screens */
+    }
+  
+    nav a {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  }
+  
